@@ -1,0 +1,21 @@
+{
+  "format_version": "1.0",
+  "resource_changes": [
+    {
+      "address": "aws_db_instance.primary",
+      "mode": "managed",
+      "type": "aws_db_instance",
+      "change": {
+        "actions": ["update"]
+      }
+    },
+    {
+      "address": "aws_instance.worker",
+      "mode": "managed",
+      "type": "aws_instance",
+      "change": {
+        "actions": ["create"]
+      }
+    }
+  ]
+}

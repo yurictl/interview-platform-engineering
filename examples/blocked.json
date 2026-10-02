@@ -1,0 +1,21 @@
+{
+  "format_version": "1.0",
+  "resource_changes": [
+    {
+      "address": "aws_s3_bucket.archive",
+      "mode": "managed",
+      "type": "aws_s3_bucket",
+      "change": {
+        "actions": ["delete"]
+      }
+    },
+    {
+      "address": "aws_instance.worker",
+      "mode": "managed",
+      "type": "aws_instance",
+      "change": {
+        "actions": ["update"]
+      }
+    }
+  ]
+}
